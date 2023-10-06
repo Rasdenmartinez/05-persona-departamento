@@ -17,20 +17,20 @@ public class Persona {
     private String direccion;
 
     @Column(name = "EDAD")
-    private int edad;
+    private Integer edad;
 
     @Column(name = "ID_Departamento")
-    private int idDepartamento;
+    private Integer idDepartamento;
 
-    public Persona(Integer id, String nombre, String direccion, int edad, int idDepartamento) {
+    public Persona() {
+    }
+
+    public Persona(Integer id, String nombre, String direccion, Integer edad, Integer idDepartamento) {
         this.id = id;
         this.nombre = nombre;
         this.direccion = direccion;
         this.edad = edad;
         this.idDepartamento = idDepartamento;
-    }
-
-    public Persona() {
     }
 
     public Integer getId() {
@@ -57,19 +57,19 @@ public class Persona {
         this.direccion = direccion;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
-    public int getIdDepartamento() {
+    public Integer getIdDepartamento() {
         return idDepartamento;
     }
 
-    public void setIdDepartamento(int idDepartamento) {
+    public void setIdDepartamento(Integer idDepartamento) {
         this.idDepartamento = idDepartamento;
     }
 
